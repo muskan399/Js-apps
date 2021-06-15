@@ -9,6 +9,7 @@ let t=document.querySelector('.addednotes');
 let notes_array=[];
 let local_notes_arr=[];
 
+
 //Function to delete a note
 function deleteNote(index)
 {
@@ -47,9 +48,17 @@ function showNotes()
 //Function to add a note
 function addNotes( e,index)
 {
-    local_notes_arr=JSON.parse(localStorage.getItem('Name'));
-    local_notes_arr.push(i1.value)
-    localStorage.setItem('Name',JSON.stringify(local_notes_arr));
+    
+    local_notes=JSON.parse(localStorage.getItem('Name'));
+    if(local_notes==null)
+    {
+        local_notes_arr=[];
+    }
+   
+        local_notes_arr.push(i1.value)
+        localStorage.setItem('Name',JSON.stringify(local_notes_arr));
+    
+
     showNotes();
 }
 
@@ -58,7 +67,6 @@ function searchNotes(e,index)
 {
     showNotes();
     html="";
-    console.log(i3.value);
     local_notes_arr.forEach(function(element,index)
     {
         console.log(element)
@@ -82,4 +90,5 @@ function searchNotes(e,index)
 //Event for searching and adding a node
 showNotes();
 i2.addEventListener("click",addNotes);
+showNotes();
 i3.addEventListener("input",searchNotes);
