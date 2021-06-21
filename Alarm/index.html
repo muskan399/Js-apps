@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      <div class="container mx-50">
+        <div class="alert alert-success alert-dismissible fade" role="alert" id='msg'>
+            <strong>Success!</strong> Alarm Setup.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <div class="alert alert-success alert-dismissible fade show" role="alert" id="wakeup">
+            <strong>Please!</strong> Wake Up
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <br>
+          <br>
+          <br>
+    <h1>Alarm Clock</h1>
+    <hr>
+    <form class="row g-3">
+        <div class="col-12">
+          <label for="inputText" class="form-label"><b>Name of Alarm</b></label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label"><b>Hour</b></label>
+          <select id="hour" class="form-select">
+            <option >00</option> <option >01</option> <option >02</option> <option >03</option> <option >04</option>
+            <option>05</option>  <option >06</option>  <option >07</option>  <option >08</option>  <option >09</option>
+            <option >10</option>  <option >11</option>  <option >12</option>  <option >14</option>  <option >15</option>
+            <option >16</option>  <option >17</option>  <option >18</option>  <option >19</option>  <option >20</option>
+            <option >21</option>  <option >22</option>  <option >23</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label"><b>Minutes</b></label>
+          <select id="minute" class="form-select">
+            <option >00</option> <option >01</option> <option >02</option> <option >03</option> <option >04</option>
+            <option>05</option>  <option >06</option>  <option >07</option>  <option >08</option>  <option >09</option>
+            <option >10</option>  <option >11</option>  <option >12</option>  <option >14</option>  <option >15</option>
+            <option >16</option>  <option >17</option>  <option >18</option>  <option >19</option>  <option >20</option>
+            <option >21</option>  <option >22</option>  <option >23</option>  <option >24</option> <option >25</option>
+            <option >26</option> <option >27</option> <option >28</option> <option>29</option>  <option >30</option>  
+            <option >31</option>  <option >32</option>  <option >33</option> <option >34</option>  <option >35</option> 
+             <option >36</option>  <option >37</option>  <option >38</option>
+            <option >39</option>  <option >40</option>  <option >41</option>  <option >42</option>  <option >42</option>
+            <option >43</option>  <option >44</option>  <option >45</option><option >46</option>  <option >47</option>  <option >48</option>
+            <option >49</option>  <option >50</option>  <option >51</option> 51 <option >52</option>  <option >53</option>
+            <option >54</option>  <option >55</option>  <option >56</option> <option >57</option> <option >58</option> <option >59</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary" id="btn">Set Alarm</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+    <script src="js/alarm.js"></script>
+  </body>
+</html>
