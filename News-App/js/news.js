@@ -6,6 +6,7 @@ let html="";
 let apiKey="5d76cb8118c94f54a85efd1d1131e212";
 let src=`https://newsapi.org/v2/top-headlines?country=${country}&category=business&apiKey=${apiKey}`
 xhr.open('GET',src,true);
+xhr.setRequestHeader('Access-Control-Allow-Methods','GET');
 xhr.onprogress= function(){
      "Onprogress";
 }
