@@ -1,0 +1,86 @@
+body {
+    background-color: black;
+}
+#calculator{ 
+    background-color: pink; 
+    width: 900px; 
+    height: 800px; 
+    margin: 20px auto; 
+    position: relative;
+}
+#container {
+    background-color: lightskyblue;
+    height: 600px; 
+    width: 330px; 
+    position: relative; 
+    margin: 10px auto; 
+    top: 10px;
+}
+#result {
+    height: 120px;
+    background-color: lightblue;
+    padding: auto;
+    margin-top: 20px;
+}
+#history{
+    text-align: right;
+    margin: 10 20px;
+    height: 20px;
+    position: relative;
+    padding: 10px;
+}
+#output{
+    text-align: right;
+    margin: 10 20px;
+    height: 20px;
+    position: relative;
+    padding: 10px;
+}
+.operator, .number, .empty{
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    font-size: 20px;
+    border-radius: 50%;
+    font-weight: bold;
+    border-width: 0ch;
+}
+button:nth-child(4) {
+    background: lightblue;
+}
+button:nth-child(8) {
+    background:lightcoral;
+}
+button:nth-child(12) {
+    background: lightgreen;
+}
+button:nth-child(16) {
+    background:lightseagreen;
+}
+button:nth-child(20) {
+    background: blue;
+}
+.operator:active, .number.focus, .empty.focus{
+    outline: 0;
+    color: blue;
+    background-color: greenyellow;
+}    
+.empty{
+    outline: 0;
+    background-color: lightskyblue;
+}
+.operator:focus{
+    outline: 0;
+}
+h1{
+    padding-top: 10px;
+    padding: auto;
+    text-align: center;
+    font-size: 65px;
+    font-family: 'Noto Sans JP', sans-serif;
+    border-bottom: 2px;
+}
+h1:after{
+    border: 2px solid;
+}
